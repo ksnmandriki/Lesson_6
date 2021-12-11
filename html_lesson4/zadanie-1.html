@@ -10,25 +10,27 @@
   <body>
     <header>
       <h1>Форма регистрации на сайте</h1>
-      <!--<nav>
-      <a href="#" title="На главную">На главную</a>
-    </nav>-->
     </header>
+
     <main>
       <article class="c1">
         <h2>Добро пожаловать на наш сайт!</h2>
-        <form action="/signup" method="POST">
-
+       
+        <form action="signup" method="POST">
+          
           <fieldset class="account-info">
             <legend>Для регистрации введите свои данные:</legend>
-            <label style="padding-top: 13px;">Имя</label>
+
+            <label class="first-name">Имя</label>
             <input type="text" name="first_name" />
-            <label>Фамилия</label>
+
+            <label class="last-name">Фамилия</label>
             <input type="text" name="last_name" />
-            <label>Email</label>
-            <input type="text" required="required" class="email notnull" />
             
-            <label style="margin-top: 15px;">Телефон</label>
+            <label class="email-notnull">Email</label>
+            <input type="text" required="required" class="email notnull" />
+
+            <label class="phone">Телефон</label>
             <input
               type="text"
               name="phone"
@@ -37,9 +39,7 @@
               placeholder="+375 (код оператора) 111-11-11"
             />
 
-           
-        
-            <label style="margin-top:17px;">Страна</label>
+            <label class="country">Страна</label>
             <select name="country">
               <option>Беларусь</option>
               <option>Россия</option>
@@ -50,54 +50,33 @@
               <option>Эстония</option>
               <option>США</option>
             </select>
-  
-            <label style="margin-top: 10px">Пароль</label>
-            <input style="height: 35px;" type="password" name="password" />
-            <label style="margin-top: 15px;">Подтвердите пароль</label>
-            <input style="height: 35px;" type="password" name="password_confirm" />
+
+            <label class="password">Пароль</label>
+            <input style="height: 33px;" type="password" name="password" />
+            
+            <label class="password-confirm">Подтвердите пароль</label>
+            <input 
+            style="height: 33px;"
+            type="password"
+            name="password_confirm"
+            />
           </fieldset>
 
-          <fieldset class="account-action">
-            <p class="p">
-            <label>
-              <input type="checkbox" name="ww_submit_confirm" />
-                &nbsp;Отметьте для подтверждения согласия
-              <a
-                href="/подключение/правила-использования-услуги"
-                target="_blank"
-                rel="noopener"
-              >
-                с правилами использования услуги
-              </a>
-            </label>
-          </p>
 
-            <p class="p" > <input type="checkbox" name="ww_submit_confirm" />
-            <label>
-                &nbsp;Отметьте для согласия на обработку персональных данных в
-                соответствии с
-             <a
-                href="/соглашение-об-обработке-персональных-данных"
-                target="_blank"
-                rel="noopener">
-                Соглашением об обработке персональных данных
-              </a>
-            </label>
-
-          </p>
-            
-              <input
-                class="btn"
-                type="submit"
-                name="submit"
-                value="Зарегистрироваться"/>
-            
+        </fieldset>
+        <fieldset class="account-action">
+          <label><input  type="checkbox" name="ww_submit_confirm" checked>&nbsp;Отметьте для подтверждения согласия <a
+              href="/подключение/правила-использования-услуги" target="_blank" rel="noopener">с правилами   использования
+              услуги</a></label><br>
+                        
+            <label ><input style="margin-top: 9px;" type="checkbox" name="ww_submit_confirm" checked>&nbsp;Отметьте для согласия на обработку персональных данных в
+                соответствии с <a href="/соглашение-об-обработке-персональных-данных" target="_blank" rel="noopener">Соглашением об
+                  обработке персональных данных</a></label><br>
+          <button class="btn" type="submit" name="submit">
+            Зарегистрироваться</button>
           </fieldset>
         </form>
       </article>
-      <!--<aside>
-      Тут могла быть ваша реклама
-    </aside>-->
     </main>
     <footer class="foot">
       <p>&#169; 2021, Официальный сайт КУЗНЕЦОВА СЕРГЕЯ НИКОЛАЕВИЧА</p>
