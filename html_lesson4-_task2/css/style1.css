@@ -1,9 +1,9 @@
-@font-face {
+/*@font-face {
   font-family: "Open Sans";
   src: url("../font/Open_Sans/static/OpenSans/OpenSans-Light.ttf");
   font-family: "Nunito Sans";
   src: url("../font/Nunito_Sans/NunitoSans-Regular.ttf");
-}
+}*/
 body {
   background: #797c7e;
   margin: 0px;
@@ -35,50 +35,52 @@ p {
   font-size: 13px;
 }
 .div-body div {
-  border-top: 3px solid #e7ebee;
-  margin-left: 7px;
+  border-top: 2px solid #e7ebee;
+  margin-left: 8px;
   margin-right: 7px;
 }
 /*регистрация*/
 h1{
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: -.2px;
-  margin-top: 8px;
-  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0px;
+  margin: 8px 8px 16px;
 }
 /*картинка текст*/
 img {
   float: left;
   width: 30px;
-  margin: 8px 11px 0px 6px;
+  margin: 9px 12px 3px 7px;
 }
 b{
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.5px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0px;
   color: #000000;
 }
 .head-div p{
-  padding-top: 13px;
-  padding-right: 50px ;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.1px;
-  font-family: 'Nunito Sans', sans-serif;
-  line-height:15px;
-  color: #5a5b5d;
+  padding-top: 15px;
+  padding-right: 40px ;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 16px;
+  color: #09090a;
 }
 /*имя*/
 h2{
   font-size: 0.45cm;
   letter-spacing: 0px;
-  font-family: Tahoma, sans-serif;
+  font-family: Tahoma, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
-  padding-top: 20px;;
+  margin-left: 8px;
+  padding-top: 22px;
   padding-bottom: 15px;
 }
 label {
-width: 63px; /* Ширина */
+width: 64px; /* Ширина */
 text-align: right; /* Выравниваем по правому краю */
 float: left; /* Выстраиваем элементы рядом */
 margin-right: 5px; /* Расстояние от текста до текстового поля */
@@ -86,104 +88,122 @@ line-height: 0px; /* Выравниваем по высоте */
 color: #797c7e;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-size: 13px;
-margin-top: 25px;
+margin-top: 26px;
+
 }
 input{
-  width: 158px;
+  width: 150px;
   margin-top: 16px;
 }
 .p-name {
   font-size: 11px;
   color: #9ca5ac;
+  letter-spacing: 0.14px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*образование*/
 .h2{
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 800;
-  letter-spacing: .5px;
-  margin-top: 27px;
-  margin-bottom: -2px;
-}
-select {
-  width: 164px;
-  height: 20px;
+  letter-spacing: 0.1px;
+  margin-top: 26px;
+  margin-bottom: -1px;
 }
 
-.bottom {
-  font-size: 10px;
-  font-weight: 900;
-  padding-left: 75px;
-  color: #56505c;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
 .education label{
-  margin-top: 21px;
+  margin-top: 25px;
   margin-left: 8px;
   font-weight: 500;
   color: #868181;
 }
-select{
-  width: 160px;
-  margin-top: 14px;
-  font-weight: 500;
-  letter-spacing: -.5px;
+.country{
+  height: 19px;
+  width: 163px;
+  margin-top: 16px;
+  margin-left: -1px;
 }
+.city{
+  height: 19px;
+  width: 162px;
+  margin-bottom: -1px;
+  margin-top: 16px;
+  font-weight: 500;
+  letter-spacing: -.1px;
+}
+.bottom {
+  font-size: 10px;
+  font-weight: 900;
+  padding-left: 77px;
+  color: #56505c;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /*Школа*/
 .h3-school {
-  font-size: 15px;
-  margin-top: 40px;
-  margin-bottom: 11px;
-  
-  
-}
+  font-size: 13px;
+  margin-top: 43px;
+  margin-left: 8px;
+  margin-bottom: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
 .school label {
-  margin-top: 20px;
+  margin-top: 22px;
   margin-left: 5px;
  
 }
 .school select {
-  margin-top: 9px;
-  width: 163px;
+  margin-top: 13px;
+  width: 166px;
   font-size: 13px;
+  letter-spacing: .1px;
 }
 /*университет*/
 .h3-university {
-  font-size: 15px;
-  margin-top: 11px;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 13px;
+  margin-left: 8px;
   margin-bottom: 13px;
 }
 .university label{
-  margin-top: 20px;
+  margin-top: 22px;
   margin-left: 6px;
 }
 .university select{
-  margin-top: 10px;
-  width: 163px;
+  margin-top: 13px;
+  width: 166px;
   font-size: 13px;
+  letter-spacing: .1px;
 }
 
 /*footer*/
 .submit_fild {
-  margin-left: 38px;
+  margin-left: 40px;
+  margin-top: 2px;
 }
 .submit_fild input {
-  width: 205px;
+  width: 209px;
+  height: 21px;
   margin-top: 27px;
+  font-size: 12px;
  font-weight: 600;
+ font-family: Arial, Helvetica, sans-serif;
  color: #555151;
- letter-spacing: -.8px;
+ letter-spacing: 0.1px;
  padding-left: 0px;
  }
 .submit_fild p {
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 200;
   margin: 0cm;
   color: #b5b7b9;
-  font-family: 'Nunito Sans', sans-serif;
-  letter-spacing: 0.4px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1px;
 }
 .submit_fild p a {
   text-decoration: none;
   color: #606e88;
+  letter-spacing: -0.01px;
+
 }
