@@ -13,8 +13,8 @@ h1 {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.1px;
-  font-stretch: condensed;
+  letter-spacing: .1px;
+  font-stretch: semi-condensed;
   margin-top: 13px;
   margin-bottom: 0px;
 }
